@@ -7,13 +7,13 @@ The following Dockerfiles have been used to create the Dockerfile of this image:
  - [node](https://github.com/nodejs/docker-node/blob/6bc7fe5d018f2235cdcd2f7681990cee9d096497/13/alpine3.11/Dockerfile)
  - [adoptopenjdk](https://github.com/AdoptOpenJDK/openjdk-docker/blob/6ef982afbdd32a0b2195c9ee0fa36328535a3c64/11/jre/alpine/Dockerfile.hotspot.releases.full)
 
-## Use the pre built image
+## Use the pre-built image
 
-The pre built image can be downloaded using Docker.
+The pre-built image can be downloaded using Docker.
 
 docker pull hakla/node-jre
 
-## Build the Docker image by yourself
+## Build the Docker image yourself
 
 You can also adjust and build the image according to your needs. Just clone the repository and then execute the build command.
 
