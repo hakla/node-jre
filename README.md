@@ -17,7 +17,7 @@ docker pull hakla/node-jre
 
 You can also adjust and build the image according to your needs. Just clone the repository and then execute the build command.
 
-docker build -t zazukoians/node-java .
+docker build -t hakla/node-jre .
 
 ## Versions
 
