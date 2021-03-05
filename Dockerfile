@@ -170,6 +170,12 @@ RUN set -eux; \
 ENV JAVA_HOME=/opt/java/openjdk \
   PATH="/opt/java/openjdk/bin:$PATH"
 
+# Install git
+
+RUN apk --update add git && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm /var/cache/apk/*
+
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["docker-entrypoint.sh"]
 
