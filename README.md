@@ -4,8 +4,8 @@ This is a simple merge of the [node](https://hub.docker.com/_/node):16-alpine an
 
 The following Dockerfiles have been used to create the Dockerfile of this image:
 
-- [node](https://github.com/nodejs/docker-node/blob/6bc7fe5d018f2235cdcd2f7681990cee9d096497/13/alpine3.11/Dockerfile)
-- [adoptopenjdk](https://github.com/AdoptOpenJDK/openjdk-docker/blob/6ef982afbdd32a0b2195c9ee0fa36328535a3c64/11/jre/alpine/Dockerfile.hotspot.releases.full)
+- [node](https://github.com/nodejs/docker-node/blob/d9c01570c0f72a40cbaece69c378d7c8187c56e9/16/alpine3.17/Dockerfile)
+- [adoptopenjdk](https://github.com/AdoptOpenJDK/openjdk-docker/blob/828f553e6df0ba9340eb4bcd52a1fbe4dc9499f0/11/jdk/alpine/Dockerfile.hotspot.releases.full)
 
 ## Use the pre-built image
 
