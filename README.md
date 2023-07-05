@@ -23,6 +23,6 @@ docker build -t hakla/node-jre .
 
 The following versions are used by this image (as defined in the original images):
 
-- NODE_VERSION=16.13.2
-- YARN_VERSION=1.22.15
-- JAVA_VERSION=jdk-11.0.6+10
+- NODE_VERSION=16.20.1
+- YARN_VERSION=1.22.19
+- JAVA_VERSION=jdk-11.0.11+9
