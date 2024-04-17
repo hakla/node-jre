@@ -2,7 +2,7 @@ FROM alpine:3.14
 
 # Install node
 
-ENV NODE_VERSION 18.16.1
+ENV NODE_VERSION 20.3.1
 
 RUN addgroup -g 1000 node \
   && adduser -u 1000 -G node -s /bin/sh -D node \
@@ -14,7 +14,7 @@ RUN addgroup -g 1000 node \
   && case "${alpineArch##*-}" in \
   x86_64) \
   ARCH='x64' \
-  CHECKSUM="aaf8f7ad6191dd62228b16071364d900a4ac3ef65c4931bc2a11925c2f72fb83" \
+  CHECKSUM="7317d150f4c37570f2c8967492f58e0dcc65487548eb59f6e7ec80deb12a5a23" \
   ;; \
   *) ;; \
   esac \
@@ -143,8 +143,8 @@ RUN set -eux; \
   ARCH="$(apk --print-arch)"; \
   case "${ARCH}" in \
   amd64|x86_64) \
-  ESUM='144f2c6bcf64faa32016f2474b6c01031be75d25325e9c3097aed6589bc5d548'; \
-  BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9/OpenJDK11U-jre_x64_linux_hotspot_11.0.11_9.tar.gz'; \
+  ESUM='e99b98f851541202ab64401594901e583b764e368814320eba442095251e78cb'; \
+  BINARY_URL='https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.11%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.11_9.tar.gz'; \
   ;; \
   *) \
   echo "Unsupported arch: ${ARCH}"; \
